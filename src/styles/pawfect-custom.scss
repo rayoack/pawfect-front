@@ -1,0 +1,243 @@
+/* Pawfect Pet Care - Custom Styles */
+
+/* Badges e Tags com cores Pawfect */
+.product-item {
+  .tag {
+    &.sale,
+    &.on-sale {
+      background-color: var(--accent-orange-intense) !important;
+      color: var(--white) !important;
+    }
+
+    &.new {
+      background-color: var(--accent-yellow-solar) !important;
+      color: var(--black) !important;
+    }
+
+    &.best-seller {
+      background-color: var(--primary-blue-vibrant) !important;
+      color: var(--white) !important;
+    }
+  }
+}
+
+/* Header com cores Pawfect */
+.header-menu {
+  &.bg-white {
+    .menu-link {
+      &:hover,
+      &.active {
+        color: var(--primary-blue-vibrant) !important;
+      }
+    }
+  }
+
+  .icon-cart,
+  .icon-wishlist,
+  .icon-account {
+    &:hover {
+      color: var(--primary-blue-vibrant) !important;
+    }
+  }
+}
+
+/* Links e botões secundários */
+a {
+  &:hover {
+    color: var(--primary-blue-vibrant);
+  }
+}
+
+/* Slider/Banner com overlay Pawfect */
+.slider-block {
+  .slider-item {
+    .text-button {
+      background-color: var(--accent-orange-intense);
+
+      &:hover {
+        background-color: var(--accent-orange-medium);
+      }
+    }
+  }
+}
+
+/* Product Card hover */
+.product-item {
+  &:hover {
+    border-color: var(--primary-blue-deep);
+  }
+
+  .list-action {
+    .add-cart-btn {
+      background-color: var(--accent-orange-intense);
+
+      &:hover {
+        background-color: var(--accent-orange-medium);
+      }
+    }
+
+    .wishlist-btn {
+      &:hover {
+        color: var(--accent-orange-intense);
+      }
+    }
+  }
+}
+
+/* Preço com destaque */
+.product-price {
+  .price {
+    color: var(--primary-blue-deep);
+    font-weight: 700;
+  }
+
+  .origin-price {
+    color: var(--secondary2);
+  }
+}
+
+/* Collection cards */
+.collection-item {
+  .text-button {
+    color: var(--primary-blue-deep);
+
+    &:hover {
+      color: var(--primary-blue-vibrant);
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Tab navigation */
+.tab-nav {
+  .tab-item {
+    &.active {
+      color: var(--primary-blue-deep);
+      border-bottom-color: var(--primary-blue-deep);
+    }
+
+    &:hover {
+      color: var(--primary-blue-vibrant);
+    }
+  }
+}
+
+/* Footer com estilo Pawfect */
+.footer {
+  background-color: var(--neutral-beige);
+
+  .heading {
+    color: var(--primary-blue-deep);
+  }
+
+  a {
+    &:hover {
+      color: var(--primary-blue-vibrant);
+    }
+  }
+}
+
+/* Newsletter com cores Pawfect */
+.newsletter-block {
+  .button-main {
+    background-color: var(--accent-orange-intense);
+
+    &:hover {
+      background-color: var(--accent-orange-medium);
+    }
+  }
+}
+
+/* Benefits icons */
+.benefit-item {
+  .icon {
+    color: var(--primary-blue-vibrant);
+  }
+}
+
+/* Rating stars */
+.star-icon {
+  &.active {
+    color: var(--accent-yellow-solar);
+  }
+}
+
+/* Badges NEW/SALE */
+.badge {
+  &.new {
+    background-color: var(--accent-yellow-solar);
+    color: var(--black);
+  }
+
+  &.sale,
+  &.hot {
+    background-color: var(--accent-orange-intense);
+    color: var(--white);
+  }
+}
+
+/* Quantidade e estoque */
+.stock-status {
+  &.in-stock {
+    color: var(--success);
+  }
+
+  &.low-stock {
+    color: var(--accent-orange-medium);
+  }
+
+  &.out-of-stock {
+    color: var(--red);
+  }
+}
+
+/* Slider pagination */
+.swiper-pagination-bullet {
+  &.swiper-pagination-bullet-active {
+    background-color: var(--primary-blue-deep);
+  }
+}
+
+/* Inputs e forms com foco Pawfect */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-blue-vibrant) !important;
+  outline: none;
+}
+
+/* Checkbox e radio customizados */
+.block-input {
+  input[type="checkbox"]:checked + .icon-checkbox {
+    color: var(--primary-blue-deep);
+  }
+}
+
+/* Top banner animado */
+.top-nav {
+  &.style-one {
+    .slogan {
+      font-weight: 500;
+    }
+  }
+}
+
+/* Menu mobile */
+@media (max-width: 1023.99px) {
+  .menu-mobile {
+    .menu-item {
+      &:hover,
+      &.active {
+        color: var(--primary-blue-vibrant);
+        background-color: rgba(8, 96, 240, 0.1);
+      }
+    }
+  }
+}
+
+/* Animações suaves */
+* {
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
