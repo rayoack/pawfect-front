@@ -79,7 +79,7 @@ const BlogList = () => {
         <>
             <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuPet props="bg-transparent" />
+                <MenuPet />
                 <Breadcrumb heading='Blog em Lista' subHeading='Artigos' />
             </div>
             <div className='blog list md:py-20 py-10'>

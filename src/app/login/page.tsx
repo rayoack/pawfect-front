@@ -53,7 +53,7 @@ const Login = () => {
         <>
             <TopNavOne props="style-one bg-primary-blue-deep" slogan="Bem-vindo à Pawfect Pet Care!" />
             <div id="header" className='relative w-full'>
-                <MenuPet props="bg-transparent" />
+                <MenuPet />
                 <Breadcrumb heading='Login' subHeading='Login' />
             </div>
             <div className="login-block md:py-20 py-10">

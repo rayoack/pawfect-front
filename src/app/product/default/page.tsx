@@ -22,7 +22,7 @@ const ProductDefault = () => {
         <>
             <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuPet props="bg-white" />
+                <MenuPet />
                 <BreadcrumbProduct data={productData} productPage='default' productId={productId} />
             </div>
             <Default data={productData} productId={productId} />

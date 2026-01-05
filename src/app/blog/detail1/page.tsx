@@ -35,7 +35,7 @@ const BlogDetailOne = () => {
         <>
             <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuPet props="bg-white" />
+                <MenuPet />
             </div>
             <div className='blog detail1'>
                 <div className="bg-img md:mt-[74px] mt-14">

@@ -37,7 +37,7 @@ const BlogDetailTwo = () => {
         <>
             <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuPet props="bg-white" />
+                <MenuPet />
             </div>
             <div className='blog detail2 md:mt-[74px] mt-[56px] border-t border-line'>
                 <div className="container lg:pt-20 md:pt-14 pt-10">

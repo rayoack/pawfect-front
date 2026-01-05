@@ -17,7 +17,7 @@ export default function BreadcrumbImg() {
         <>
             <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuPet props="bg-transparent" />
+                <MenuPet />
             </div>
             <ShopBreadCrumbImg data={productData} productPerPage={12} dataType={type} />
             <Footer />

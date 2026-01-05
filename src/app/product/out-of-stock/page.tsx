@@ -20,7 +20,7 @@ const ProductOutOfStock = () => {
         <>
             <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuPet props="bg-white" />
+                <MenuPet />
                 <BreadcrumbProduct data={productData} productPage='out-of-stock' productId={productId} />
             </div>
             <OutOfStock data={productData} productId={productId} />

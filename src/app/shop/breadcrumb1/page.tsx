@@ -24,7 +24,7 @@ export default function BreadCrumb1() {
         <>
             <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuPet props="bg-transparent" />
+                <MenuPet />
             </div>
             <ShopBreadCrumb1 data={productData} productPerPage={9} dataType={type} gender={gender} category={category} />
             <Footer />      

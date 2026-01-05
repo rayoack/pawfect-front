@@ -77,7 +77,7 @@ const BlogDefault = () => {
         <>
             <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuPet props="bg-transparent" />
+                <MenuPet />
                 <Breadcrumb heading='Blog' subHeading='Artigos' />
             </div>
             <div className='blog default md:py-20 py-10'>
