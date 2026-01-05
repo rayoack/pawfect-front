@@ -2,7 +2,7 @@
 import React from 'react'
 import { useSearchParams } from 'next/navigation';
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
-import MenuOne from '@/components/Header/Menu/MenuOne'
+import MenuPet from '@/components/Header/Menu/MenuPet'
 import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
 import CountdownTimer from '@/components/Product/Detail/CountdownTimer';
 import Footer from '@/components/Footer/Footer'
@@ -18,9 +18,9 @@ const ProductTwoScrolling = () => {
 
     return (
         <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
+            <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuOne props="bg-white" />
+                <MenuPet props="bg-white" />
                 <BreadcrumbProduct data={productData} productPage='countdown-timer' productId={productId} />
             </div>
             <CountdownTimer data={productData} productId={productId} />

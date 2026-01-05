@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
-import MenuOne from '@/components/Header/Menu/MenuOne'
+import MenuPet from '@/components/Header/Menu/MenuPet'
 import blogData from '@/data/Blog.json'
 import NewsInsight from '@/components/Home3/NewsInsight';
 import Footer from '@/components/Footer/Footer'
@@ -35,9 +35,9 @@ const BlogDetailTwo = () => {
 
     return (
         <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
+            <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuOne props="bg-white" />
+                <MenuPet props="bg-white" />
             </div>
             <div className='blog detail2 md:mt-[74px] mt-[56px] border-t border-line'>
                 <div className="container lg:pt-20 md:pt-14 pt-10">

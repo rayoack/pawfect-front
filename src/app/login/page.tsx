@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
-import MenuOne from '@/components/Header/Menu/MenuOne'
+import MenuPet from '@/components/Header/Menu/MenuPet'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb'
 import Footer from '@/components/Footer/Footer'
 import * as Icon from "@phosphor-icons/react/dist/ssr"
@@ -53,7 +53,7 @@ const Login = () => {
         <>
             <TopNavOne props="style-one bg-primary-blue-deep" slogan="Bem-vindo à Pawfect Pet Care!" />
             <div id="header" className='relative w-full'>
-                <MenuOne props="bg-transparent" />
+                <MenuPet props="bg-transparent" />
                 <Breadcrumb heading='Login' subHeading='Login' />
             </div>
             <div className="login-block md:py-20 py-10">

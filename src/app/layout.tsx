@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Instrument_Sans } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import '@/styles/styles.scss'
 import GlobalProvider from './GlobalProvider'
 import ModalCart from '@/components/Modal/ModalCart'
@@ -13,7 +13,11 @@ import { Toaster } from 'react-hot-toast'
 
 const serverTimeLeft: CountdownTimeType = countdownTime();
 
-const instrument = Instrument_Sans({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Pawfect Pet Care - Tudo para o seu melhor amigo',
@@ -28,7 +32,7 @@ export default function RootLayout({
   return (
     <GlobalProvider>
       <html lang="pt-BR">
-        <body className={instrument.className}>
+        <body className={poppins.className}>
           {children}
           <ModalCart serverTimeLeft={serverTimeLeft} />
           <ModalWishlist />

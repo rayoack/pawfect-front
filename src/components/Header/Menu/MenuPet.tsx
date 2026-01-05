@@ -79,7 +79,14 @@ const MenuPet = () => {
                             <i className="icon-category text-2xl"></i>
                         </div>
                         <Link href={'/'} className='flex items-center'>
-                            <div className="heading4">Pawfect</div>
+                            <Image
+                                src='/images/logo/pawfect-logo.png'
+                                alt='Pawfect Pet Care'
+                                width={150}
+                                height={50}
+                                priority
+                                className='h-auto'
+                            />
                         </Link>
                         <div className="form-search w-[54%] pl-8 flex items-center h-[48px] max-lg:hidden">
                             <div className='w-full flex items-center h-full'>
@@ -201,7 +208,7 @@ const MenuPet = () => {
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('bed')}
+                                                                        onClick={() => handleTypeClick('cama')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
                                                                         Camas Pet
@@ -209,18 +216,18 @@ const MenuPet = () => {
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('pet')}
+                                                                        onClick={() => handleTypeClick('brinquedo')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
-                                                                        Promoção Pet
+                                                                        Brinquedos
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('food')}
+                                                                        onClick={() => handleTypeClick('racao')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
-                                                                        Ração Pet
+                                                                        Rações
                                                                     </div>
                                                                 </li>
                                                                 <li>
@@ -234,11 +241,11 @@ const MenuPet = () => {
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-2">Dog</div>
+                                                            <div className="text-button-uppercase pb-2">Cães</div>
                                                             <ul>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('food')}
+                                                                        onClick={() => handleTypeClick('racao')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
                                                                         Ração para Cães
@@ -246,7 +253,7 @@ const MenuPet = () => {
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('outfit')}
+                                                                        onClick={() => handleTypeClick('roupa')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
                                                                         Roupas para Cães
@@ -254,7 +261,7 @@ const MenuPet = () => {
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('bed')}
+                                                                        onClick={() => handleTypeClick('cama')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
                                                                         Camas para Cães
@@ -262,10 +269,10 @@ const MenuPet = () => {
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('pet')}
+                                                                        onClick={() => handleTypeClick('brinquedo')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
-                                                                        Promoção Cães
+                                                                        Brinquedos para Cães
                                                                     </div>
                                                                 </li>
                                                                 <li>
@@ -279,19 +286,19 @@ const MenuPet = () => {
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-2">Cat</div>
+                                                            <div className="text-button-uppercase pb-2">Gatos</div>
                                                             <ul>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('ring')}
+                                                                        onClick={() => handleTypeClick('acessorio')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
-                                                                        Coleiras para Gatos
+                                                                        Acessórios para Gatos
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('food')}
+                                                                        onClick={() => handleTypeClick('racao')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
                                                                         Ração para Gatos
@@ -299,7 +306,7 @@ const MenuPet = () => {
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('bed')}
+                                                                        onClick={() => handleTypeClick('cama')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
                                                                         Camas para Gatos
@@ -307,10 +314,10 @@ const MenuPet = () => {
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('pet')}
+                                                                        onClick={() => handleTypeClick('brinquedo')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
-                                                                        Promoção Gatos
+                                                                        Brinquedos para Gatos
                                                                     </div>
                                                                 </li>
                                                                 <li>
@@ -328,39 +335,39 @@ const MenuPet = () => {
                                                             <ul>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('pet')}
+                                                                        onClick={() => handleTypeClick('petisco')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
-                                                                        Promoção Pet
+                                                                        Petiscos
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('bed')}
+                                                                        onClick={() => handleTypeClick('higiene')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
-                                                                        Camas para Pet
+                                                                        Higiene
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('food')}
+                                                                        onClick={() => handleTypeClick('farmacia')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
-                                                                        Food For pet
+                                                                        Farmácia
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleTypeClick('outfit')}
+                                                                        onClick={() => handleTypeClick('acessorio')}
                                                                         className={`link text-secondary duration-300 cursor-pointer`}
                                                                     >
-                                                                        Outfit For Pet
+                                                                        Acessórios
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div
-                                                                        onClick={() => handleCategoryClick('cosmetic')}
+                                                                        onClick={() => handleCategoryClick('pet')}
                                                                         className={`link text-secondary duration-300 view-all-btn`}
                                                                     >
                                                                         Ver Todos
@@ -372,10 +379,10 @@ const MenuPet = () => {
                                                     <div className="banner-ads-block pl-2.5 basis-1/3">
                                                         <div className="banner-ads-item bg-linear rounded-2xl relative overflow-hidden cursor-pointer" onClick={() => handleCategoryClick('pet')}>
                                                             <div className="text-content py-14 pl-8 relative z-[1]">
-                                                                <div className="text-button-uppercase text-white bg-red px-2 py-0.5 inline-block rounded-sm">Save $10</div>
-                                                                <div className="heading6 mt-2">20% off <br />Pet Collection</div>
+                                                                <div className="text-button-uppercase text-white bg-red px-2 py-0.5 inline-block rounded-sm">Economize R$50</div>
+                                                                <div className="heading6 mt-2">20% off <br />Coleção Pet</div>
                                                                 <div className="body1 mt-3 text-secondary">
-                                                                    Starting at <span className='text-red'>$59.99</span>
+                                                                    A partir de <span className='text-red'>R$59,99</span>
                                                                 </div>
                                                                 <div className="button-main mt-5">Comprar Agora</div>
                                                             </div>
@@ -401,14 +408,14 @@ const MenuPet = () => {
                                                 <div className="flex justify-between py-8">
                                                     <div className="nav-link basis-2/3 flex justify-between pr-12">
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-2">Shop Features</div>
+                                                            <div className="text-button-uppercase pb-2">Navegação</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/shop/breadcrumb-img'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Breadcrumb IMG
+                                                                        Loja com Imagem
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -416,7 +423,7 @@ const MenuPet = () => {
                                                                         href={'/shop/breadcrumb1'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb1' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Breadcrumb 1
+                                                                        Loja Estilo 1
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -424,7 +431,7 @@ const MenuPet = () => {
                                                                         href={'/shop/breadcrumb2'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb2' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Breadcrumb 2
+                                                                        Loja Estilo 2
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -432,20 +439,20 @@ const MenuPet = () => {
                                                                         href={'/shop/collection'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/collection' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Collection
+                                                                        Coleção
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-2">Shop Features</div>
+                                                            <div className="text-button-uppercase pb-2">Filtros</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/shop/filter-canvas'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/filter-canvas' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Filter Canvas
+                                                                        Filtro Lateral
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -453,7 +460,7 @@ const MenuPet = () => {
                                                                         href={'/shop/filter-options'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/filter-options' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Filter Options
+                                                                        Opções de Filtro
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -461,7 +468,7 @@ const MenuPet = () => {
                                                                         href={'/shop/filter-dropdown'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/filter-dropdown' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Filter Dropdown
+                                                                        Filtro Dropdown
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -469,20 +476,20 @@ const MenuPet = () => {
                                                                         href={'/shop/sidebar-list'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/sidebar-list' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Sidebar List
+                                                                        Lista Lateral
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-2">Shop Layout</div>
+                                                            <div className="text-button-uppercase pb-2">Layout da Loja</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/shop/default'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/shop/default' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Default
+                                                                        Loja Padrão
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -490,7 +497,7 @@ const MenuPet = () => {
                                                                         href={'/shop/default-grid'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/shop/default-grid' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Default Grid
+                                                                        Loja em Grade
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -498,7 +505,7 @@ const MenuPet = () => {
                                                                         href={'/shop/default-list'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/shop/default-list' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Default List
+                                                                        Loja em Lista
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -506,7 +513,7 @@ const MenuPet = () => {
                                                                         href={'/shop/fullwidth'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/shop/fullwidth' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Full Width
+                                                                        Loja Largura Total
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -514,7 +521,7 @@ const MenuPet = () => {
                                                                         href={'/shop/square'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/square' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Square
+                                                                        Loja Quadrada
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -522,7 +529,7 @@ const MenuPet = () => {
                                                                         href={'/checkout'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/checkout' ? 'active' : ''}`}
                                                                     >
-                                                                        Checkout
+                                                                        Finalizar Compra
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -530,20 +537,20 @@ const MenuPet = () => {
                                                                         href={'/checkout2'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/checkout2' ? 'active' : ''}`}
                                                                     >
-                                                                        Checkout Style 2
+                                                                        Finalizar Compra 2
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-2">Products Pages</div>
+                                                            <div className="text-button-uppercase pb-2">Páginas</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/wishlist'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/wishlist' ? 'active' : ''}`}
                                                                     >
-                                                                        Wish List
+                                                                        Lista de Desejos
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -551,7 +558,7 @@ const MenuPet = () => {
                                                                         href={'/search-result'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/search-result' ? 'active' : ''}`}
                                                                     >
-                                                                        Search Result
+                                                                        Resultado da Busca
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -559,7 +566,7 @@ const MenuPet = () => {
                                                                         href={'/cart'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/cart' ? 'active' : ''}`}
                                                                     >
-                                                                        Shopping Cart
+                                                                        Carrinho
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -567,7 +574,7 @@ const MenuPet = () => {
                                                                         href={'/login'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/login' ? 'active' : ''}`}
                                                                     >
-                                                                        Login/Register
+                                                                        Login/Cadastro
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -575,7 +582,7 @@ const MenuPet = () => {
                                                                         href={'/forgot-password'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/forgot-password' ? 'active' : ''}`}
                                                                     >
-                                                                        Forgot Password
+                                                                        Esqueceu a Senha
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -583,7 +590,7 @@ const MenuPet = () => {
                                                                         href={'/order-tracking'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/order-tracking' ? 'active' : ''}`}
                                                                     >
-                                                                        Order Tracking
+                                                                        Rastrear Pedido
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -591,7 +598,7 @@ const MenuPet = () => {
                                                                         href={'/my-account'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/my-account' ? 'active' : ''}`}
                                                                     >
-                                                                        My Account
+                                                                        Minha Conta
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -618,14 +625,14 @@ const MenuPet = () => {
                                                 <div className="flex justify-between py-8">
                                                     <div className="nav-link basis-2/3 flex justify-between xl:pr-14 pr-5">
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-2">Products Features</div>
+                                                            <div className="text-button-uppercase pb-2">Tipos de Produto</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/default'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/default' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Defaults
+                                                                        Produto Padrão
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -633,7 +640,7 @@ const MenuPet = () => {
                                                                         href={'/product/sale'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/sale' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Sale
+                                                                        Produto em Promoção
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -641,7 +648,7 @@ const MenuPet = () => {
                                                                         href={'/product/countdown-timer'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/countdown-timer' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Countdown Timer
+                                                                        Contagem Regressiva
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -649,7 +656,7 @@ const MenuPet = () => {
                                                                         href={'/product/grouped'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/grouped' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Grouped
+                                                                        Produtos Agrupados
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -657,7 +664,7 @@ const MenuPet = () => {
                                                                         href={'/product/bought-together'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/bought-together' ? 'active' : ''}`}
                                                                     >
-                                                                        Frequently Bought Together
+                                                                        Comprados Juntos
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -665,7 +672,7 @@ const MenuPet = () => {
                                                                         href={'/product/out-of-stock'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/out-of-stock' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Out Of Stock
+                                                                        Produtos Esgotados
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -673,20 +680,20 @@ const MenuPet = () => {
                                                                         href={'/product/variable'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/variable' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Variable
+                                                                        Produtos Variáveis
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-2">Products Features</div>
+                                                            <div className="text-button-uppercase pb-2">Recursos</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/external'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/external' ? 'active' : ''}`}
                                                                     >
-                                                                        Products External
+                                                                        Produto Externo
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -694,7 +701,7 @@ const MenuPet = () => {
                                                                         href={'/product/on-sale'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/on-sale' ? 'active' : ''}`}
                                                                     >
-                                                                        Products On Sale
+                                                                        Produto em Oferta
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -702,7 +709,7 @@ const MenuPet = () => {
                                                                         href={'/product/discount'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/discount' ? 'active' : ''}`}
                                                                     >
-                                                                        Products With Discount
+                                                                        Produto com Desconto
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -710,7 +717,7 @@ const MenuPet = () => {
                                                                         href={'/product/sidebar'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/sidebar' ? 'active' : ''}`}
                                                                     >
-                                                                        Products With Sidebar
+                                                                        Produto com Sidebar
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -718,20 +725,20 @@ const MenuPet = () => {
                                                                         href={'/product/fixed-price'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/fixed-price' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Fixed Price
+                                                                        Produto Preço Fixo
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-2">Products Layout</div>
+                                                            <div className="text-button-uppercase pb-2">Layout de Produtos</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/thumbnail-left'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/product/thumbnail-left' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Thumbnails Left
+                                                                        Miniaturas à Esquerda
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -739,7 +746,7 @@ const MenuPet = () => {
                                                                         href={'/product/thumbnail-bottom'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/product/thumbnail-bottom' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Thumbnails Bottom
+                                                                        Miniaturas na Base
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -747,7 +754,7 @@ const MenuPet = () => {
                                                                         href={'/product/one-scrolling'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/product/one-scrolling' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Grid 1 Scrolling
+                                                                        Grade 1 com Rolagem
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -755,7 +762,7 @@ const MenuPet = () => {
                                                                         href={'/product/two-scrolling'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/product/two-scrolling' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Grid 2 Scrolling
+                                                                        Grade 2 com Rolagem
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -763,7 +770,7 @@ const MenuPet = () => {
                                                                         href={'/product/combined-one'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/product/combined-one' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Combined 1
+                                                                        Combinado 1
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -771,7 +778,7 @@ const MenuPet = () => {
                                                                         href={'/product/combined-two'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/product/combined-two' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Combined 2
+                                                                        Combinado 2
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -797,27 +804,27 @@ const MenuPet = () => {
                                             <ul className='w-full'>
                                                 <li>
                                                     <Link href="/blog/default" className={`text-secondary duration-300 ${pathname === '/blog/default' ? 'active' : ''}`}>
-                                                        Blog Default
+                                                        Blog Padrão
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/blog/list" className={`text-secondary duration-300 ${pathname === '/blog/list' ? 'active' : ''}`}>
-                                                        Blog List
+                                                        Blog em Lista
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/blog/grid" className={`text-secondary duration-300 ${pathname === '/blog/grid' ? 'active' : ''}`}>
-                                                        Blog Grid
+                                                        Blog em Grade
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/blog/detail1" className={`text-secondary duration-300 ${pathname === '/blog/detail1' ? 'active' : ''}`}>
-                                                        Blog Detail 1
+                                                        Detalhe do Artigo 1
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/blog/detail2" className={`text-secondary duration-300 ${pathname === '/blog/detail2' ? 'active' : ''}`}>
-                                                        Blog Detail 2
+                                                        Detalhe do Artigo 2
                                                     </Link>
                                                 </li>
                                             </ul>
@@ -870,9 +877,9 @@ const MenuPet = () => {
                                 </ul>
                             </div>
                         </div>
-                        {/* <div className="right flex items-center gap-1 max-[1240px]:hidden">
-                            <div className="text-button">Limited Time Offer: <span className='text-red'>Free shipping</span> on all orders over $50</div>
-                        </div> */}
+                        <div className="right flex items-center gap-1 max-[1240px]:hidden">
+                            <div className="text-button">Oferta: <span className='text-red'>Frete grátis</span> em todos os pedidos acima de R$50</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -888,7 +895,15 @@ const MenuPet = () => {
                                 >
                                     <Icon.X size={14} />
                                 </div>
-                                <Link href={'/'} className='logo text-3xl font-semibold text-center'>Pawfect</Link>
+                                <Link href={'/'} className='logo flex justify-center'>
+                                    <Image
+                                        src='/images/logo/pawfect-logo.png'
+                                        alt='Pawfect Pet Care'
+                                        width={120}
+                                        height={40}
+                                        className='h-auto'
+                                    />
+                                </Link>
                             </div>
                             <div className="form-search relative mt-2">
                                 <Icon.MagnifyingGlass size={20} className='absolute left-3 top-1/2 -translate-y-1/2 cursor-pointer' />
@@ -1068,7 +1083,7 @@ const MenuPet = () => {
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('bed')}
+                                                                    onClick={() => handleTypeClick('cama')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
                                                                     Camas Pet
@@ -1076,18 +1091,18 @@ const MenuPet = () => {
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('pet')}
+                                                                    onClick={() => handleTypeClick('brinquedo')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Promoção Pet
+                                                                    Brinquedos
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('food')}
+                                                                    onClick={() => handleTypeClick('racao')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Ração Pet
+                                                                    Rações
                                                                 </div>
                                                             </li>
                                                             <li>
@@ -1101,11 +1116,11 @@ const MenuPet = () => {
                                                         </ul>
                                                     </div>
                                                     <div className="nav-item">
-                                                        <div className="text-button-uppercase pb-1">Dog</div>
+                                                        <div className="text-button-uppercase pb-1">Cães</div>
                                                         <ul>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('food')}
+                                                                    onClick={() => handleTypeClick('racao')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
                                                                     Ração para Cães
@@ -1113,7 +1128,7 @@ const MenuPet = () => {
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('outfit')}
+                                                                    onClick={() => handleTypeClick('roupa')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
                                                                     Roupas para Cães
@@ -1121,7 +1136,7 @@ const MenuPet = () => {
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('bed')}
+                                                                    onClick={() => handleTypeClick('cama')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
                                                                     Camas para Cães
@@ -1129,10 +1144,10 @@ const MenuPet = () => {
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('pet')}
+                                                                    onClick={() => handleTypeClick('brinquedo')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Promoção Cães
+                                                                    Brinquedos para Cães
                                                                 </div>
                                                             </li>
                                                             <li>
@@ -1146,19 +1161,19 @@ const MenuPet = () => {
                                                         </ul>
                                                     </div>
                                                     <div className="nav-item">
-                                                        <div className="text-button-uppercase pb-1">Cat</div>
+                                                        <div className="text-button-uppercase pb-1">Gatos</div>
                                                         <ul>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('ring')}
+                                                                    onClick={() => handleTypeClick('acessorio')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Coleiras para Gatos
+                                                                    Acessórios para Gatos
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('food')}
+                                                                    onClick={() => handleTypeClick('racao')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
                                                                     Ração para Gatos
@@ -1166,7 +1181,7 @@ const MenuPet = () => {
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('bed')}
+                                                                    onClick={() => handleTypeClick('cama')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
                                                                     Camas para Gatos
@@ -1174,10 +1189,10 @@ const MenuPet = () => {
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('pet')}
+                                                                    onClick={() => handleTypeClick('brinquedo')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Promoção Gatos
+                                                                    Brinquedos para Gatos
                                                                 </div>
                                                             </li>
                                                             <li>
@@ -1195,39 +1210,39 @@ const MenuPet = () => {
                                                         <ul>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('pet')}
+                                                                    onClick={() => handleTypeClick('petisco')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Promoção Pet
+                                                                    Petiscos
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('bed')}
+                                                                    onClick={() => handleTypeClick('higiene')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Camas para Pet
+                                                                    Higiene
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('food')}
+                                                                    onClick={() => handleTypeClick('farmacia')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Food For pet
+                                                                    Farmácia
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('outfit')}
+                                                                    onClick={() => handleTypeClick('acessorio')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Outfit For Pet
+                                                                    Acessórios
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleCategoryClick('cosmetic')}
+                                                                    onClick={() => handleCategoryClick('pet')}
                                                                     className={`link text-secondary duration-300 view-all-btn`}
                                                                 >
                                                                     Ver Todos
@@ -1239,10 +1254,10 @@ const MenuPet = () => {
                                                 <div className="banner-ads-block grid sm:grid-cols-2 items-center gap-6 pt-6">
                                                     <div className="banner-ads-item bg-linear rounded-2xl relative overflow-hidden" onClick={() => handleCategoryClick('pet')}>
                                                         <div className="text-content py-14 pl-8 relative z-[1]">
-                                                            <div className="text-button-uppercase text-white bg-red px-2 py-0.5 inline-block rounded-sm">Save $10</div>
-                                                            <div className="heading6 mt-2">20% off <br />Pet Collection</div>
+                                                            <div className="text-button-uppercase text-white bg-red px-2 py-0.5 inline-block rounded-sm">Economize R$50</div>
+                                                            <div className="heading6 mt-2">20% off <br />Coleção Pet</div>
                                                             <div className="body1 mt-2 text-secondary">
-                                                                Starting at <span className='text-red'>$59.99</span>
+                                                                A partir de <span className='text-red'>R$59,99</span>
                                                             </div>
                                                             <div className="button-main mt-4">Comprar Agora</div>
                                                         </div>
@@ -1262,7 +1277,7 @@ const MenuPet = () => {
                                         className={`${openSubNavMobile === 3 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(3)}
                                     >
-                                        <a href={'#!'} className='text-xl font-semibold flex items-center justify-between mt-5'>Shop
+                                        <a href={'#!'} className='text-xl font-semibold flex items-center justify-between mt-5'>Loja
                                             <span className='text-right'>
                                                 <Icon.CaretRight size={20} />
                                             </span>
@@ -1273,20 +1288,20 @@ const MenuPet = () => {
                                                 onClick={() => handleOpenSubNavMobile(3)}
                                             >
                                                 <Icon.CaretLeft />
-                                                Back
+                                                Voltar
                                             </div>
                                             <div className="list-nav-item w-full pt-3 pb-12">
                                                 <div className="">
                                                     <div className="nav-link grid grid-cols-2 gap-5 gap-y-6 justify-between">
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-1">Shop Features</div>
+                                                            <div className="text-button-uppercase pb-1">Navegação</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/shop/breadcrumb-img'}
                                                                         className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Breadcrumb IMG
+                                                                        Loja com Imagem
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1294,7 +1309,7 @@ const MenuPet = () => {
                                                                         href={'/shop/breadcrumb1'}
                                                                         className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb1' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Breadcrumb 1
+                                                                        Loja Estilo 1
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1302,7 +1317,7 @@ const MenuPet = () => {
                                                                         href={'/shop/breadcrumb2'}
                                                                         className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb2' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Breadcrumb 2
+                                                                        Loja Estilo 2
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1310,20 +1325,20 @@ const MenuPet = () => {
                                                                         href={'/shop/collection'}
                                                                         className={`text-secondary duration-300 ${pathname === '/shop/collection' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Collection
+                                                                        Coleção
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-1">Shop Features</div>
+                                                            <div className="text-button-uppercase pb-1">Filtros</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/shop/filter-canvas'}
                                                                         className={`text-secondary duration-300 ${pathname === '/shop/filter-canvas' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Filter Canvas
+                                                                        Filtro Lateral
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1331,7 +1346,7 @@ const MenuPet = () => {
                                                                         href={'/shop/filter-options'}
                                                                         className={`text-secondary duration-300 ${pathname === '/shop/filter-options' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Filter Options
+                                                                        Opções de Filtro
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1339,7 +1354,7 @@ const MenuPet = () => {
                                                                         href={'/shop/filter-dropdown'}
                                                                         className={`text-secondary duration-300 ${pathname === '/shop/filter-dropdown' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Filter Dropdown
+                                                                        Filtro Dropdown
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1347,20 +1362,20 @@ const MenuPet = () => {
                                                                         href={'/shop/sidebar-list'}
                                                                         className={`text-secondary duration-300 ${pathname === '/shop/sidebar-list' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Sidebar List
+                                                                        Lista Lateral
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-1">Shop Layout</div>
+                                                            <div className="text-button-uppercase pb-1">Layout da Loja</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/shop/default'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/shop/default' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Default
+                                                                        Loja Padrão
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1368,7 +1383,7 @@ const MenuPet = () => {
                                                                         href={'/shop/default-grid'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/shop/default-grid' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Default Grid
+                                                                        Loja em Grade
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1376,7 +1391,7 @@ const MenuPet = () => {
                                                                         href={'/shop/default-list'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/shop/default-list' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Default List
+                                                                        Loja em Lista
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1384,7 +1399,7 @@ const MenuPet = () => {
                                                                         href={'/shop/fullwidth'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/shop/fullwidth' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Full Width
+                                                                        Loja Largura Total
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1392,20 +1407,20 @@ const MenuPet = () => {
                                                                         href={'/shop/square'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/shop/square' ? 'active' : ''}`}
                                                                     >
-                                                                        Shop Square
+                                                                        Loja Quadrada
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-1">Products Pages</div>
+                                                            <div className="text-button-uppercase pb-1">Páginas</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/wishlist'}
                                                                         className={`text-secondary duration-300 ${pathname === '/wishlist' ? 'active' : ''}`}
                                                                     >
-                                                                        Wish List
+                                                                        Lista de Desejos
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1413,7 +1428,7 @@ const MenuPet = () => {
                                                                         href={'/search-result'}
                                                                         className={`text-secondary duration-300 ${pathname === '/search-result' ? 'active' : ''}`}
                                                                     >
-                                                                        Search Result
+                                                                        Resultado da Busca
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1421,7 +1436,7 @@ const MenuPet = () => {
                                                                         href={'/cart'}
                                                                         className={`text-secondary duration-300 ${pathname === '/cart' ? 'active' : ''}`}
                                                                     >
-                                                                        Shopping Cart
+                                                                        Carrinho
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1429,7 +1444,7 @@ const MenuPet = () => {
                                                                         href={'/login'}
                                                                         className={`text-secondary duration-300 ${pathname === '/login' ? 'active' : ''}`}
                                                                     >
-                                                                        Login/Register
+                                                                        Login/Cadastro
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1437,7 +1452,7 @@ const MenuPet = () => {
                                                                         href={'/forgot-password'}
                                                                         className={`text-secondary duration-300 ${pathname === '/forgot-password' ? 'active' : ''}`}
                                                                     >
-                                                                        Forgot Password
+                                                                        Esqueceu a Senha
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1445,7 +1460,7 @@ const MenuPet = () => {
                                                                         href={'/order-tracking'}
                                                                         className={`text-secondary duration-300 ${pathname === '/order-tracking' ? 'active' : ''}`}
                                                                     >
-                                                                        Order Tracking
+                                                                        Rastrear Pedido
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1453,7 +1468,7 @@ const MenuPet = () => {
                                                                         href={'/my-account'}
                                                                         className={`text-secondary duration-300 ${pathname === '/my-account' ? 'active' : ''}`}
                                                                     >
-                                                                        My Account
+                                                                        Minha Conta
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -1475,7 +1490,7 @@ const MenuPet = () => {
                                         className={`${openSubNavMobile === 4 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(4)}
                                     >
-                                        <a href={'#!'} className='text-xl font-semibold flex items-center justify-between mt-5'>Product
+                                        <a href={'#!'} className='text-xl font-semibold flex items-center justify-between mt-5'>Produtos
                                             <span className='text-right'>
                                                 <Icon.CaretRight size={20} />
                                             </span>
@@ -1486,20 +1501,20 @@ const MenuPet = () => {
                                                 onClick={() => handleOpenSubNavMobile(4)}
                                             >
                                                 <Icon.CaretLeft />
-                                                Back
+                                                Voltar
                                             </div>
                                             <div className="list-nav-item w-full pt-3 pb-12">
                                                 <div className="">
                                                     <div className="nav-link grid grid-cols-2 gap-5 gap-y-6 justify-between">
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-1">Products Features</div>
+                                                            <div className="text-button-uppercase pb-1">Tipos de Produto</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/default'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/default' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Defaults
+                                                                        Produto Padrão
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1507,7 +1522,7 @@ const MenuPet = () => {
                                                                         href={'/product/sale'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/sale' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Sale
+                                                                        Produto em Promoção
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1515,7 +1530,7 @@ const MenuPet = () => {
                                                                         href={'/product/countdown-timer'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/countdown-timer' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Countdown Timer
+                                                                        Contagem Regressiva
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1523,7 +1538,7 @@ const MenuPet = () => {
                                                                         href={'/product/grouped'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/grouped' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Grouped
+                                                                        Produtos Agrupados
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1531,7 +1546,7 @@ const MenuPet = () => {
                                                                         href={'/product/bought-together'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/bought-together' ? 'active' : ''}`}
                                                                     >
-                                                                        Frequently Bought Together
+                                                                        Comprados Juntos
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1539,7 +1554,7 @@ const MenuPet = () => {
                                                                         href={'/product/out-of-stock'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/out-of-stock' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Out Of Stock
+                                                                        Produtos Esgotados
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1547,20 +1562,20 @@ const MenuPet = () => {
                                                                         href={'/product/variable'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/variable' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Variable
+                                                                        Produtos Variáveis
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
-                                                            <div className="text-button-uppercase pb-1">Products Features</div>
+                                                            <div className="text-button-uppercase pb-1">Recursos</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/external'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/external' ? 'active' : ''}`}
                                                                     >
-                                                                        Products External
+                                                                        Produto Externo
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1568,7 +1583,7 @@ const MenuPet = () => {
                                                                         href={'/product/on-sale'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/on-sale' ? 'active' : ''}`}
                                                                     >
-                                                                        Products On Sale
+                                                                        Produto em Oferta
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1576,7 +1591,7 @@ const MenuPet = () => {
                                                                         href={'/product/discount'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/discount' ? 'active' : ''}`}
                                                                     >
-                                                                        Products With Discount
+                                                                        Produto com Desconto
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1584,7 +1599,7 @@ const MenuPet = () => {
                                                                         href={'/product/sidebar'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/sidebar' ? 'active' : ''}`}
                                                                     >
-                                                                        Products With Sidebar
+                                                                        Produto com Sidebar
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1592,20 +1607,20 @@ const MenuPet = () => {
                                                                         href={'/product/fixed-price'}
                                                                         className={`text-secondary duration-300 ${pathname === '/product/fixed-price' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Fixed Price
+                                                                        Produto Preço Fixo
                                                                     </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item col-span-2">
-                                                            <div className="text-button-uppercase pb-1">Products Layout</div>
+                                                            <div className="text-button-uppercase pb-1">Layout de Produtos</div>
                                                             <ul>
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/thumbnail-left'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/thumbnail-left' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Thumbnails Left
+                                                                        Miniaturas à Esquerda
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1613,7 +1628,7 @@ const MenuPet = () => {
                                                                         href={'/product/thumbnail-bottom'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/thumbnail-bottom' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Thumbnails Bottom
+                                                                        Miniaturas na Base
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1621,7 +1636,7 @@ const MenuPet = () => {
                                                                         href={'/product/one-scrolling'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/one-scrolling' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Grid 1 Scrolling
+                                                                        Grade 1 com Rolagem
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1629,7 +1644,7 @@ const MenuPet = () => {
                                                                         href={'/product/two-scrolling'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/two-scrolling' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Grid 2 Scrolling
+                                                                        Grade 2 com Rolagem
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1637,7 +1652,7 @@ const MenuPet = () => {
                                                                         href={'/product/combined-one'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/combined-one' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Combined 1
+                                                                        Combinado 1
                                                                     </Link>
                                                                 </li>
                                                                 <li>
@@ -1645,7 +1660,7 @@ const MenuPet = () => {
                                                                         href={'/product/combined-two'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/combined-two' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Combined 2
+                                                                        Combinado 2
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -1667,7 +1682,7 @@ const MenuPet = () => {
                                         className={`${openSubNavMobile === 5 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(5)}
                                     >
-                                        <a href={'#!'} className='text-xl font-semibold flex items-center justify-between mt-5'>Blog
+                                        <a href={'#!'} className='text-xl font-semibold flex items-center justify-between mt-5'>Artigos
                                             <span className='text-right'>
                                                 <Icon.CaretRight size={20} />
                                             </span>
@@ -1678,33 +1693,33 @@ const MenuPet = () => {
                                                 onClick={() => handleOpenSubNavMobile(5)}
                                             >
                                                 <Icon.CaretLeft />
-                                                Back
+                                                Voltar
                                             </div>
                                             <div className="list-nav-item w-full pt-2 pb-6">
                                                 <ul className='w-full'>
                                                     <li>
                                                         <Link href="/blog/default" className={`text-secondary duration-300 ${pathname === '/blog/default' ? 'active' : ''}`}>
-                                                            Blog Default
+                                                            Blog Padrão
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/blog/list" className={`text-secondary duration-300 ${pathname === '/blog/list' ? 'active' : ''}`}>
-                                                            Blog List
+                                                            Blog em Lista
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/blog/grid" className={`text-secondary duration-300 ${pathname === '/blog/grid' ? 'active' : ''}`}>
-                                                            Blog Grid
+                                                            Blog em Grade
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/blog/detail1" className={`text-secondary duration-300 ${pathname === '/blog/detail1' ? 'active' : ''}`}>
-                                                            Blog Detail 1
+                                                            Detalhe do Artigo 1
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/blog/detail2" className={`text-secondary duration-300 ${pathname === '/blog/detail2' ? 'active' : ''}`}>
-                                                            Blog Detail 2
+                                                            Detalhe do Artigo 2
                                                         </Link>
                                                     </li>
                                                 </ul>
@@ -1715,7 +1730,7 @@ const MenuPet = () => {
                                         className={`${openSubNavMobile === 6 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(6)}
                                     >
-                                        <a href={'#!'} className='text-xl font-semibold flex items-center justify-between mt-5'>Pages
+                                        <a href={'#!'} className='text-xl font-semibold flex items-center justify-between mt-5'>Páginas
                                             <span className='text-right'>
                                                 <Icon.CaretRight size={20} />
                                             </span>
@@ -1726,7 +1741,7 @@ const MenuPet = () => {
                                                 onClick={() => handleOpenSubNavMobile(6)}
                                             >
                                                 <Icon.CaretLeft />
-                                                Back
+                                                Voltar
                                             </div>
                                             <div className="list-nav-item w-full pt-2 pb-6">
                                                 <ul className='w-full'>

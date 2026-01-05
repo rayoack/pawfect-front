@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
-import MenuOne from '@/components/Header/Menu/MenuOne'
+import MenuPet from '@/components/Header/Menu/MenuPet'
 import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
 import Sale from '@/components/Product/Detail/Sale';
 import Footer from '@/components/Footer/Footer'
@@ -20,9 +20,9 @@ const ProductSale = () => {
 
     return (
         <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
+            <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
             <div id="header" className='relative w-full'>
-                <MenuOne props="bg-white" />
+                <MenuPet props="bg-white" />
                 <BreadcrumbProduct data={productData} productPage='sale' productId={productId} />
             </div>
             <Sale data={productData} productId={productId} />

@@ -35,10 +35,10 @@ const SliderPet = () => {
                                     </div>
                                     <div className="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
                                         <Image
-                                            src={'/images/slider/bg-pet1-1.png'}
+                                            src={'/images/slider/pet/banner-1.jpg'}
                                             width={2560}
                                             height={1080}
-                                            alt='bg-pet1-1'
+                                            alt='Homem abraçando cachorro - Pawfect Pet Care'
                                             priority={true}
                                             className='w-full h-full object-cover'
                                         />
@@ -50,16 +50,16 @@ const SliderPet = () => {
                             <div className="slider-item h-full w-full relative">
                                 <div className="container w-full h-full flex items-center">
                                     <div className="text-content sm:w-1/2 w-2/3">
-                                        <div className="text-sub-display">Promoção! Até 50% OFF!</div>
+                                        <div className="text-sub-display">Produtos para Cães e Gatos!</div>
                                         <div className="text-display md:mt-5 mt-2">Libere um Pet Feliz e Saudável</div>
                                         <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Comprar Agora</Link>
                                     </div>
                                     <div className="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
                                         <Image
-                                            src={'/images/slider/bg-pet1-2.png'}
+                                            src={'/images/slider/pet/banner-2.jpg'}
                                             width={2560}
                                             height={1080}
-                                            alt='bg-pet1-2'
+                                            alt='Mulher com gato em casa - Pawfect Pet Care'
                                             priority={true}
                                             className='w-full h-full object-cover'
                                         />
@@ -71,16 +71,16 @@ const SliderPet = () => {
                             <div className="slider-item h-full w-full relative">
                                 <div className="container w-full h-full flex items-center">
                                     <div className="text-content sm:w-1/2 w-2/3">
-                                        <div className="text-sub-display">Promoção! Até 50% OFF!</div>
-                                        <div className="text-display md:mt-5 mt-2">Alimente o Apetite do Seu Pet</div>
+                                        <div className="text-sub-display">Frete Grátis acima de R$199!</div>
+                                        <div className="text-display md:mt-5 mt-2">Momentos Especiais com Seu Pet</div>
                                         <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Comprar Agora</Link>
                                     </div>
                                     <div className="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
                                         <Image
-                                            src={'/images/slider/bg-pet1-3.png'}
+                                            src={'/images/slider/pet/banner-3.jpg'}
                                             width={2560}
                                             height={1080}
-                                            alt='bg-pet1-3'
+                                            alt='Casal na praia com cachorro - Pawfect Pet Care'
                                             priority={true}
                                             className='w-full h-full object-cover'
                                         />

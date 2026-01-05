@@ -26,7 +26,7 @@ const ModalCompare = () => {
                     </div>
                     <div className="container h-full flex items-center w-full">
                         <div className="content-main flex items-center justify-between xl:gap-10 gap-6 w-full max-md:flex-wrap">
-                            <div className="heading5 flex-shrink-0 max-md:w-full">Compare <br className='max-md:hidden' />Products</div>
+                            <div className="heading5 flex-shrink-0 max-md:w-full">Comparar <br className='max-md:hidden' />Produtos</div>
                             <div className="list-product flex items-center w-full gap-4">
                                 {compareState.compareArray.slice(0, 3).map((product) => (
                                     <div key={product.id} className='item p-3 border border-line rounded-xl relative'>
@@ -42,7 +42,7 @@ const ModalCompare = () => {
                                             </div>
                                             <div className=''>
                                                 <div className="name text-title">{product.name}</div>
-                                                <div className="product-price text-title mt-2">${product.price}.00</div>
+                                                <div className="product-price text-title mt-2">R${product.price},00</div>
                                             </div>
                                         </div>
                                         <div className="close-btn absolute -right-4 -top-4 w-8 h-8 rounded-full bg-red text-white flex items-center justify-center duration-300 cursor-pointer hover:bg-black" onClick={() => removeFromCompare(product.id)}>
@@ -60,15 +60,15 @@ const ModalCompare = () => {
                                                 className='button-main whitespace-nowrap'
                                                 onClick={(e) => {
                                                     e.stopPropagation()
-                                                    alert('Minimum 2 products required to compare!')
+                                                    alert('Minimo 2 produtos para comparar!')
                                                 }}
                                             >
-                                                Compare Products
+                                                Comparar Produtos
                                             </a>
                                         </>
                                     ) : (
                                         <>
-                                            <Link href={'/compare'} onClick={closeModalCompare} className='button-main whitespace-nowrap'>Compare Products</Link>
+                                            <Link href={'/compare'} onClick={closeModalCompare} className='button-main whitespace-nowrap'>Comparar Produtos</Link>
                                         </>
                                     )
                                 }
@@ -79,7 +79,7 @@ const ModalCompare = () => {
                                     }}
                                     className="button-main whitespace-nowrap border border-black bg-white text-black"
                                 >
-                                    Clear All Products
+                                    Limpar Tudo
                                 </div>
                             </div>
                         </div>

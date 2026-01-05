@@ -123,7 +123,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                 addToCompare(productMain);
             }
         } else {
-            alert('Compare up to 3 products')
+            alert('Compare ate 3 produtos')
         }
 
         openModalCompare();
@@ -255,12 +255,12 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                             </div>
                             <div className="flex items-center mt-3">
                                 <Rate currentRate={productMain.rate} size={14} />
-                                <span className='caption1 text-secondary'>(1.234 reviews)</span>
+                                <span className='caption1 text-secondary'>(1.234 avaliacoes)</span>
                             </div>
                             <div className="flex items-center gap-3 flex-wrap mt-5 pb-6 border-b border-line">
-                                <div className="product-price heading5">${productMain.price}.00</div>
+                                <div className="product-price heading5">R${productMain.price},00</div>
                                 <div className='w-px h-4 bg-line'></div>
-                                <div className="product-origin-price font-normal text-secondary2"><del>${productMain.originPrice}.00</del></div>
+                                <div className="product-origin-price font-normal text-secondary2"><del>R${productMain.originPrice},00</del></div>
                                 {productMain.originPrice && (
                                     <div className="product-sale caption2 font-semibold bg-green px-3 py-0.5 inline-block rounded-full">
                                         -{percentSale}%
@@ -270,7 +270,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                             </div>
                             <div className="list-action mt-6">
                                 <div className="choose-color">
-                                    <div className="text-title">Colors: <span className='text-title color'>{activeColor}</span></div>
+                                    <div className="text-title">Cores: <span className='text-title color'>{activeColor}</span></div>
                                     <div className="list-color flex items-center gap-2 flex-wrap mt-3">
                                         {productMain.variation.map((item, index) => (
                                             <div
@@ -297,12 +297,12 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                 </div>
                                 <div className="choose-size mt-5">
                                     <div className="heading flex items-center justify-between">
-                                        <div className="text-title">Size: <span className='text-title size'>{activeSize}</span></div>
+                                        <div className="text-title">Tamanho: <span className='text-title size'>{activeSize}</span></div>
                                         <div
                                             className="caption1 size-guide text-red underline cursor-pointer"
                                             onClick={handleOpenSizeGuide}
                                         >
-                                            Size Guide
+                                            Guia de Tamanhos
                                         </div>
                                         <ModalSizeguide data={productMain} isOpen={openSizeGuide} onClose={handleCloseSizeGuide} />
                                     </div>
@@ -318,7 +318,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                         ))}
                                     </div>
                                 </div>
-                                <div className="text-title mt-5">Quantity:</div>
+                                <div className="text-title mt-5">Quantidade:</div>
                                 <div className="choose-quantity flex items-center lg:justify-between gap-5 gap-y-3 mt-3">
                                     <div className="quantity-block md:p-3 max-md:py-1.5 max-md:px-3 flex items-center justify-between rounded-lg border border-line sm:w-[180px] w-[120px] flex-shrink-0">
                                         <Icon.Minus
@@ -333,52 +333,52 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                             className='cursor-pointer'
                                         />
                                     </div>
-                                    <div onClick={handleAddToCart} className="button-main w-full text-center bg-white text-black border border-black">Add To Cart</div>
+                                    <div onClick={handleAddToCart} className="button-main w-full text-center bg-white text-black border border-black">Adicionar ao Carrinho</div>
                                 </div>
                                 <div className="button-block mt-5">
-                                    <div className="button-main w-full text-center">Buy It Now</div>
+                                    <div className="button-main w-full text-center">Comprar Agora</div>
                                 </div>
                                 <div className="flex items-center lg:gap-20 gap-8 mt-5 pb-6 border-b border-line">
                                     <div className="compare flex items-center gap-3 cursor-pointer" onClick={(e) => { e.stopPropagation(); handleAddToCompare() }}>
                                         <div className="compare-btn md:w-12 md:h-12 w-10 h-10 flex items-center justify-center border border-line cursor-pointer rounded-xl duration-300 hover:bg-black hover:text-white">
                                             <Icon.ArrowsCounterClockwise className='heading6' />
                                         </div>
-                                        <span>Compare</span>
+                                        <span>Comparar</span>
                                     </div>
                                     <div className="share flex items-center gap-3 cursor-pointer">
                                         <div className="share-btn md:w-12 md:h-12 w-10 h-10 flex items-center justify-center border border-line cursor-pointer rounded-xl duration-300 hover:bg-black hover:text-white">
                                             <Icon.ShareNetwork weight='fill' className='heading6' />
                                         </div>
-                                        <span>Share Products</span>
+                                        <span>Compartilhar</span>
                                     </div>
                                 </div>
                                 <div className="more-infor mt-6">
                                     <div className="flex items-center gap-4 flex-wrap">
                                         <div className="flex items-center gap-1">
                                             <Icon.ArrowClockwise className='body1' />
-                                            <div className="text-title">Delivery & Return</div>
+                                            <div className="text-title">Entrega e Devolucao</div>
                                         </div>
                                         <div className="flex items-center gap-1">
                                             <Icon.Question className='body1' />
-                                            <div className="text-title">Ask A Question</div>
+                                            <div className="text-title">Tire suas Duvidas</div>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-1 mt-3">
                                         <Icon.Timer className='body1' />
-                                        <div className="text-title">Estimated Delivery:</div>
-                                        <div className="text-secondary">14 January - 18 January</div>
+                                        <div className="text-title">Entrega Estimada:</div>
+                                        <div className="text-secondary">14 Janeiro - 18 Janeiro</div>
                                     </div>
                                     <div className="flex items-center gap-1 mt-3">
                                         <Icon.Eye className='body1' />
                                         <div className="text-title">38</div>
-                                        <div className="text-secondary">people viewing this product right now!</div>
+                                        <div className="text-secondary">pessoas vendo este produto agora!</div>
                                     </div>
                                     <div className="flex items-center gap-1 mt-3">
                                         <div className="text-title">SKU:</div>
                                         <div className="text-secondary">53453412</div>
                                     </div>
                                     <div className="flex items-center gap-1 mt-3">
-                                        <div className="text-title">Categories:</div>
+                                        <div className="text-title">Categorias:</div>
                                         <div className="text-secondary">{productMain.category}, {productMain.gender}</div>
                                     </div>
                                     <div className="flex items-center gap-1 mt-3">
@@ -388,7 +388,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                 </div>
                                 <div className="list-payment mt-7">
                                     <div className="main-content lg:pt-8 pt-6 lg:pb-6 pb-4 sm:px-4 px-3 border border-line rounded-xl relative max-md:w-2/3 max-sm:w-full">
-                                        <div className="heading6 px-5 bg-white absolute -top-[14px] left-1/2 -translate-x-1/2 whitespace-nowrap">Guranteed safe checkout</div>
+                                        <div className="heading6 px-5 bg-white absolute -top-[14px] left-1/2 -translate-x-1/2 whitespace-nowrap">Pagamento 100% Seguro</div>
                                         <div className="list grid grid-cols-6">
                                             <div className="item flex items-center justify-center lg:px-3 px-1">
                                                 <Image
@@ -449,31 +449,31 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                 </div>
                             </div>
                             <div className="get-it mt-6 pb-8 border-b border-line">
-                                <div className="heading5">Get it today</div>
+                                <div className="heading5">Receba Hoje</div>
                                 <div className="item flex items-center gap-3 mt-4">
                                     <div className="icon-delivery-truck text-4xl"></div>
                                     <div>
-                                        <div className="text-title">Free shipping</div>
-                                        <div className="caption1 text-secondary mt-1">Free shipping on orders over $75.</div>
+                                        <div className="text-title">Frete Gratis</div>
+                                        <div className="caption1 text-secondary mt-1">Frete gratis em pedidos acima de R$150.</div>
                                     </div>
                                 </div>
                                 <div className="item flex items-center gap-3 mt-4">
                                     <div className="icon-phone-call text-4xl"></div>
                                     <div>
-                                        <div className="text-title">Support everyday</div>
-                                        <div className="caption1 text-secondary mt-1">Support from 8:30 AM to 10:00 PM everyday</div>
+                                        <div className="text-title">Suporte Todos os Dias</div>
+                                        <div className="caption1 text-secondary mt-1">Atendimento das 8:30 as 22:00 todos os dias</div>
                                     </div>
                                 </div>
                                 <div className="item flex items-center gap-3 mt-4">
                                     <div className="icon-return text-4xl"></div>
                                     <div>
-                                        <div className="text-title">100 Day Returns</div>
-                                        <div className="caption1 text-secondary mt-1">Not impressed? Get a refund. You have 100 days to break our hearts.</div>
+                                        <div className="text-title">30 Dias para Devolucao</div>
+                                        <div className="caption1 text-secondary mt-1">Nao gostou? Receba seu dinheiro de volta. Voce tem 30 dias para devolver.</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="list-product hide-product-sold  menu-main mt-6">
-                                <div className="heading5 pb-4">You{String.raw`'ll`} love this too</div>
+                                <div className="heading5 pb-4">Voce tambem vai amar</div>
                                 <Swiper
                                     spaceBetween={12}
                                     slidesPerView={2}
@@ -515,13 +515,13 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                     className={`tab-item heading5 has-line-before text-secondary2 hover:text-black duration-300 ${activeTab === 'description' ? 'active' : ''}`}
                                     onClick={() => handleActiveTab('description')}
                                 >
-                                    Description
+                                    Descricao
                                 </div>
                                 <div
                                     className={`tab-item heading5 has-line-before text-secondary2 hover:text-black duration-300 ${activeTab === 'specifications' ? 'active' : ''}`}
                                     onClick={() => handleActiveTab('specifications')}
                                 >
-                                    Specifications
+                                    Especificacoes
                                 </div>
                             </div>
                         </div>
@@ -529,11 +529,11 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                             <div className={`desc-item description ${activeTab === 'description' ? 'open' : ''}`}>
                                 <div className='grid md:grid-cols-2 gap-8 gap-y-5'>
                                     <div className="left">
-                                        <div className="heading6">Description</div>
-                                        <div className="text-secondary mt-2">Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. These cabinets not only make a great storage units, but also bring a great decorative accent to your decor. Traditionally designed, they are perfect to be used in the hallway, living room, bedroom, office or any place where you need to store or display things. Made of high quality materials, they are sturdy and durable for years. Bring one-of-a-kind look to your interior with furniture from Onita Furniture!</div>
+                                        <div className="heading6">Descricao</div>
+                                        <div className="text-secondary mt-2">Produtos de alta qualidade para seu pet. Desenvolvidos com materiais seguros e duráveis, proporcionando o melhor cuidado para seus animais de estimação. Nossa linha de produtos é pensada para atender todas as necessidades do seu companheiro, com design moderno e funcional.</div>
                                     </div>
                                     <div className="right">
-                                        <div className="heading6">About This Products</div>
+                                        <div className="heading6">Sobre Este Produto</div>
                                         <div className="list-feature">
                                             <div className="item flex gap-1 text-secondary mt-1">
                                                 <Icon.Dot size={28} />
@@ -561,23 +561,23 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                 <div className="grid lg:grid-cols-4 grid-cols-2 gap-[30px] md:mt-10 mt-6">
                                     <div className="item">
                                         <div className="icon-delivery-truck text-4xl"></div>
-                                        <div className="heading6 mt-4">Shipping Faster</div>
-                                        <div className="text-secondary mt-2">Use on walls, furniture, doors and many more surfaces. The possibilities are endless.</div>
+                                        <div className="heading6 mt-4">Entrega Rapida</div>
+                                        <div className="text-secondary mt-2">Envio rapido para todo o Brasil com rastreamento em tempo real.</div>
                                     </div>
                                     <div className="item">
                                         <div className="icon-cotton text-4xl"></div>
-                                        <div className="heading6 mt-4">Cotton Material</div>
-                                        <div className="text-secondary mt-2">Use on walls, furniture, doors and many more surfaces. The possibilities are endless.</div>
+                                        <div className="heading6 mt-4">Material Premium</div>
+                                        <div className="text-secondary mt-2">Produtos feitos com materiais de alta qualidade e seguros para seu pet.</div>
                                     </div>
                                     <div className="item">
                                         <div className="icon-guarantee text-4xl"></div>
-                                        <div className="heading6 mt-4">High Quality</div>
-                                        <div className="text-secondary mt-2">Use on walls, furniture, doors and many more surfaces. The possibilities are endless.</div>
+                                        <div className="heading6 mt-4">Alta Qualidade</div>
+                                        <div className="text-secondary mt-2">Garantia de satisfacao em todos os nossos produtos.</div>
                                     </div>
                                     <div className="item">
                                         <div className="icon-leaves-compatible text-4xl"></div>
-                                        <div className="heading6 mt-4">highly compatible</div>
-                                        <div className="text-secondary mt-2">Use on walls, furniture, doors and many more surfaces. The possibilities are endless.</div>
+                                        <div className="heading6 mt-4">Pet Friendly</div>
+                                        <div className="text-secondary mt-2">Produtos testados e aprovados para a seguranca do seu animal.</div>
                                     </div>
                                 </div>
                             </div>
@@ -657,8 +657,8 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                 <div className="review-block md:py-20 py-10 bg-surface">
                     <div className="container">
                         <div className="heading flex items-center justify-between flex-wrap gap-4">
-                            <div className="heading4">Customer Review</div>
-                            <Link href={'#form-review'} className='button-main bg-white text-black border border-black'>Write Reviews</Link>
+                            <div className="heading4">Avaliacoes dos Clientes</div>
+                            <Link href={'#form-review'} className='button-main bg-white text-black border border-black'>Escrever Avaliacao</Link>
                         </div>
                         <div className="top-overview flex justify-between py-6 max-md:flex-col gap-y-6">
                             <div className="rating lg:w-1/4 md:w-[30%] lg:pr-[75px] md:pr-[35px]">
@@ -666,7 +666,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                     <div className="text-display">4.6</div>
                                     <div className='flex flex-col items-center'>
                                         <Rate currentRate={5} size={18} />
-                                        <div className='text-secondary text-center mt-1'>(1,968 Ratings)</div>
+                                        <div className='text-secondary text-center mt-1'>(1.968 Avaliacoes)</div>
                                     </div>
                                 </div>
                                 <div className="list-rating mt-3">
@@ -723,7 +723,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                 </div>
                             </div>
                             <div className="list-img lg:w-3/4 md:w-[70%] lg:pl-[15px] md:pl-[15px]">
-                                <div className="heading5">All Image (128)</div>
+                                <div className="heading5">Todas as Imagens (128)</div>
                                 <div className="list md:mt-6 mt-3">
                                     <Swiper
                                         spaceBetween={16}
@@ -822,13 +822,13 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                     </Swiper>
                                 </div>
                                 <div className="sorting flex items-center flex-wrap md:gap-5 gap-3 gap-y-3 mt-6">
-                                    <div className="text-button">Sort by</div>
-                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">Newest</div>
-                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">5 Star</div>
-                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">4 Star</div>
-                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">3 Star</div>
-                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">2 Star</div>
-                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">1 Star</div>
+                                    <div className="text-button">Ordenar por</div>
+                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">Mais Recentes</div>
+                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">5 Estrelas</div>
+                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">4 Estrelas</div>
+                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">3 Estrelas</div>
+                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">2 Estrelas</div>
+                                    <div className="item bg-white px-4 py-1 border border-line rounded-full">1 Estrela</div>
                                 </div>
                             </div>
                         </div>
@@ -859,25 +859,25 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                         />
                                     </div>
                                     <div className="user mt-3">
-                                        <div className="text-title">Tony Nguyen</div>
+                                        <div className="text-title">Maria Silva</div>
                                         <div className="flex items-center gap-2">
-                                            <div className="text-secondary2">1 days ago</div>
+                                            <div className="text-secondary2">1 dia atras</div>
                                             <div className="text-secondary2">-</div>
-                                            <div className="text-secondary2"><span>Yellow</span> / <span>XL</span></div>
+                                            <div className="text-secondary2"><span>Azul</span> / <span>M</span></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="right lg:w-3/4 w-full lg:pl-[15px]">
                                     <Rate currentRate={5} size={16} />
-                                    <div className="heading5 mt-3">Unbeatable Style and Quality: A Fashion Brand That Delivers</div>
-                                    <div className="body1 mt-3">I can{String.raw`'t`} get enough of the fashion pieces from this brand. They have a great selection for every occasion and the prices are reasonable. The shipping is fast and the items always arrive in perfect condition.</div>
+                                    <div className="heading5 mt-3">Produto Excelente! Meu Pet Adorou</div>
+                                    <div className="body1 mt-3">Comprei esse produto para meu cachorro e ele simplesmente amou! A qualidade e otima, o material e resistente e o acabamento e perfeito. Recomendo muito para quem quer o melhor para seu pet.</div>
                                     <div className="action mt-3">
                                         <div className="flex items-center gap-4">
                                             <div className="like-btn flex items-center gap-1 cursor-pointer">
                                                 <Icon.HandsClapping size={18} />
                                                 <div className="text-button">20</div>
                                             </div>
-                                            <Link href={'#form-review'} className="reply-btn text-button text-secondary cursor-pointer hover:text-black">Reply</Link>
+                                            <Link href={'#form-review'} className="reply-btn text-button text-secondary cursor-pointer hover:text-black">Responder</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -908,25 +908,25 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                         />
                                     </div>
                                     <div className="user mt-3">
-                                        <div className="text-title">Tony Nguyen</div>
+                                        <div className="text-title">Joao Santos</div>
                                         <div className="flex items-center gap-2">
-                                            <div className="text-secondary2">1 days ago</div>
+                                            <div className="text-secondary2">3 dias atras</div>
                                             <div className="text-secondary2">-</div>
-                                            <div className="text-secondary2"><span>Yellow</span> / <span>XL</span></div>
+                                            <div className="text-secondary2"><span>Vermelho</span> / <span>G</span></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="right lg:w-3/4 w-full lg:pl-[15px]">
                                     <Rate currentRate={5} size={16} />
-                                    <div className="heading5 mt-3">Exceptional Fashion: The Perfect Blend of Style and Durability</div>
-                                    <div className="body1 mt-3">The fashion brand{String.raw`'s`} online shopping experience is seamless. The website is user-friendly, the product images are clear, and the checkout process is quick.</div>
+                                    <div className="heading5 mt-3">Qualidade Premium e Entrega Super Rapida</div>
+                                    <div className="body1 mt-3">A experiencia de compra foi excelente! O site e muito facil de usar, as fotos dos produtos sao claras e a entrega foi muito rapida. Meu gato adorou o produto!</div>
                                     <div className="action mt-3">
                                         <div className="flex items-center gap-4">
                                             <div className="like-btn flex items-center gap-1 cursor-pointer">
                                                 <Icon.HandsClapping size={18} />
                                                 <div className="text-button">20</div>
                                             </div>
-                                            <Link href={'#form-review'} className="reply-btn text-button text-secondary cursor-pointer hover:text-black">Reply</Link>
+                                            <Link href={'#form-review'} className="reply-btn text-button text-secondary cursor-pointer hover:text-black">Responder</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -957,49 +957,49 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                         />
                                     </div>
                                     <div className="user mt-3">
-                                        <div className="text-title">Tony Nguyen</div>
+                                        <div className="text-title">Ana Oliveira</div>
                                         <div className="flex items-center gap-2">
-                                            <div className="text-secondary2">1 days ago</div>
+                                            <div className="text-secondary2">5 dias atras</div>
                                             <div className="text-secondary2">-</div>
-                                            <div className="text-secondary2"><span>Yellow</span> / <span>XL</span></div>
+                                            <div className="text-secondary2"><span>Verde</span> / <span>P</span></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="right lg:w-3/4 w-full lg:pl-[15px]">
                                     <Rate currentRate={5} size={16} />
-                                    <div className="heading5 mt-3">Elevate Your Wardrobe: Stunning Dresses That Make a Statement</div>
-                                    <div className="body1 mt-3">I love how sustainable and ethically conscious this fashion brand is. They prioritize eco-friendly materials and fair trade practices, which makes me feel good about supporting them.</div>
+                                    <div className="heading5 mt-3">Melhor Loja Pet que Ja Comprei!</div>
+                                    <div className="body1 mt-3">Adoro essa loja! Os produtos sao de otima qualidade e feitos com materiais seguros para pets. Me sinto muito bem comprando aqui sabendo que cuido bem do meu animalzinho.</div>
                                     <div className="action mt-3">
                                         <div className="flex items-center gap-4">
                                             <div className="like-btn flex items-center gap-1 cursor-pointer">
                                                 <Icon.HandsClapping size={18} />
                                                 <div className="text-button">20</div>
                                             </div>
-                                            <Link href={'#form-review'} className="reply-btn text-button text-secondary cursor-pointer hover:text-black">Reply</Link>
+                                            <Link href={'#form-review'} className="reply-btn text-button text-secondary cursor-pointer hover:text-black">Responder</Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-button more-review-btn text-center mt-2 underline">View More Comments</div>
+                            <div className="text-button more-review-btn text-center mt-2 underline">Ver Mais Comentarios</div>
                         </div>
                         <div id="form-review" className='form-review pt-6'>
-                            <div className="heading4">Leave A comment</div>
+                            <div className="heading4">Deixe seu Comentario</div>
                             <form className="grid sm:grid-cols-2 gap-4 gap-y-5 mt-6">
                                 <div className="name ">
-                                    <input className="border-line px-4 pt-3 pb-3 w-full rounded-lg" id="username" type="text" placeholder="Your Name *" required />
+                                    <input className="border-line px-4 pt-3 pb-3 w-full rounded-lg" id="username" type="text" placeholder="Seu Nome *" required />
                                 </div>
                                 <div className="mail ">
-                                    <input className="border-line px-4 pt-3 pb-3 w-full rounded-lg" id="email" type="email" placeholder="Your Email *" required />
+                                    <input className="border-line px-4 pt-3 pb-3 w-full rounded-lg" id="email" type="email" placeholder="Seu Email *" required />
                                 </div>
                                 <div className="col-span-full message">
-                                    <textarea className="border border-line px-4 py-3 w-full rounded-lg" id="message" name="message" placeholder="Your message *" required></textarea>
+                                    <textarea className="border border-line px-4 py-3 w-full rounded-lg" id="message" name="message" placeholder="Sua mensagem *" required></textarea>
                                 </div>
                                 <div className="col-span-full flex items-start -mt-2 gap-2">
                                     <input type="checkbox" id="saveAccount" name="saveAccount" className='mt-1.5' />
-                                    <label className="" htmlFor="saveAccount">Save my name, email, and website in this browser for the next time I comment.</label>
+                                    <label className="" htmlFor="saveAccount">Salvar meu nome, email e website neste navegador para o proximo comentario.</label>
                                 </div>
                                 <div className="col-span-full sm:pt-3">
-                                    <button className='button-main bg-white text-black border border-black'>Submit Reviews</button>
+                                    <button className='button-main bg-white text-black border border-black'>Enviar Avaliacao</button>
                                 </div>
                             </form>
                         </div>
@@ -1007,7 +1007,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                 </div>
                 <div className="related-product md:py-20 py-10">
                     <div className="container">
-                        <div className="heading3 text-center">Related Products</div>
+                        <div className="heading3 text-center">Produtos Relacionados</div>
                         <div className="list-product hide-product-sold  grid lg:grid-cols-4 grid-cols-2 md:gap-[30px] gap-5 md:mt-10 mt-6">
                             {data.slice(Number(productId), Number(productId) + 4).map((item, index) => (
                                 <Product key={index} data={item} type='grid' style='style-1' />

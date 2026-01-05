@@ -53,7 +53,7 @@ const ModalCart = ({ serverTimeLeft }: { serverTimeLeft: CountdownTimeType }) =>
                     onClick={(e) => { e.stopPropagation() }}
                 >
                     <div className="left w-1/2 border-r border-line py-6 max-md:hidden">
-                        <div className="heading5 px-6 pb-3">You May Also Like</div>
+                        <div className="heading5 px-6 pb-3">Voce Tambem Pode Gostar</div>
                         <div className="list px-6">
                             {productData.slice(0, 4).map((product) => (
                                 <div key={product.id} className='item py-5 flex items-center justify-between gap-3 border-b border-line'>
@@ -70,8 +70,8 @@ const ModalCart = ({ serverTimeLeft }: { serverTimeLeft: CountdownTimeType }) =>
                                         <div className=''>
                                             <div className="name text-button">{product.name}</div>
                                             <div className="flex items-center gap-2 mt-2">
-                                                <div className="product-price text-title">${product.price}.00</div>
-                                                <div className="product-origin-price text-title text-secondary2"><del>${product.originPrice}.00</del></div>
+                                                <div className="product-price text-title">R${product.price},00</div>
+                                                <div className="product-origin-price text-title text-secondary2"><del>R${product.originPrice},00</del></div>
                                             </div>
                                         </div>
                                     </div>
@@ -90,7 +90,7 @@ const ModalCart = ({ serverTimeLeft }: { serverTimeLeft: CountdownTimeType }) =>
                     </div>
                     <div className="right cart-block md:w-1/2 w-full py-6 relative overflow-hidden">
                         <div className="heading px-6 pb-3 flex items-center justify-between relative">
-                            <div className="heading5">Shopping Cart</div>
+                            <div className="heading5">Carrinho de Compras</div>
                             <div
                                 className="close-btn absolute right-6 top-0 w-6 h-6 rounded-full bg-surface flex items-center justify-center duration-300 cursor-pointer hover:bg-black hover:text-white"
                                 onClick={closeModalCart}
@@ -99,17 +99,17 @@ const ModalCart = ({ serverTimeLeft }: { serverTimeLeft: CountdownTimeType }) =>
                             </div>
                         </div>
                         <div className="time px-6">
-                            <div className=" flex items-center gap-3 px-5 py-3 bg-green rounded-lg">
+                            <div className=" flex items-center gap-3 px-5 py-3 bg-accent-yellow-solar rounded-lg">
                                 <p className='text-3xl'>🔥</p>
-                                <div className="caption1">Your cart will expire in <span className='text-red caption1 font-semibold'>{timeLeft.minutes}:
-                                    {timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}</span> minutes!<br />
-                                    Please checkout now before your items sell out!</div>
+                                <div className="caption1">Seu carrinho expira em <span className='text-red caption1 font-semibold'>{timeLeft.minutes}:
+                                    {timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}</span> minutos!<br />
+                                    Finalize agora antes que os itens esgotem!</div>
                             </div>
                         </div>
                         <div className="heading banner mt-3 px-6">
-                            <div className="text">Buy <span className="text-button"> $<span className="more-price">{moneyForFreeship - totalCart > 0 ? (<>{moneyForFreeship - totalCart}</>) : (0)}</span>.00 </span>
-                                <span>more to get </span>
-                                <span className="text-button">freeship</span></div>
+                            <div className="text">Compre mais <span className="text-button"> R$<span className="more-price">{moneyForFreeship - totalCart > 0 ? (<>{moneyForFreeship - totalCart}</>) : (0)}</span>,00 </span>
+                                <span>para ganhar </span>
+                                <span className="text-button">frete gratis</span></div>
                             <div className="tow-bar-block mt-3">
                                 <div
                                     className="progress-line"
@@ -137,14 +137,14 @@ const ModalCart = ({ serverTimeLeft }: { serverTimeLeft: CountdownTimeType }) =>
                                                     className="remove-cart-btn caption1 font-semibold text-red underline cursor-pointer"
                                                     onClick={() => removeFromCart(product.id)}
                                                 >
-                                                    Remove
+                                                    Remover
                                                 </div>
                                             </div>
                                             <div className="flex items-center justify-between gap-2 mt-3 w-full">
                                                 <div className="flex items-center text-secondary2 capitalize">
                                                     {product.selectedSize || product.sizes[0]}/{product.selectedColor || product.variation[0].color}
                                                 </div>
-                                                <div className="product-price text-title">${product.price}.00</div>
+                                                <div className="product-price text-title">R${product.price},00</div>
                                             </div>
                                         </div>
                                     </div>
@@ -158,26 +158,26 @@ const ModalCart = ({ serverTimeLeft }: { serverTimeLeft: CountdownTimeType }) =>
                                     onClick={() => handleActiveTab('note')}
                                 >
                                     <Icon.NotePencil className='text-xl' />
-                                    <div className="caption1">Note</div>
+                                    <div className="caption1">Observacao</div>
                                 </div>
                                 <div
                                     className="item flex items-center gap-3 cursor-pointer"
                                     onClick={() => handleActiveTab('shipping')}
                                 >
                                     <Icon.Truck className='text-xl' />
-                                    <div className="caption1">Shipping</div>
+                                    <div className="caption1">Frete</div>
                                 </div>
                                 <div
                                     className="item flex items-center gap-3 cursor-pointer"
                                     onClick={() => handleActiveTab('coupon')}
                                 >
                                     <Icon.Tag className='text-xl' />
-                                    <div className="caption1">Coupon</div>
+                                    <div className="caption1">Cupom</div>
                                 </div>
                             </div>
                             <div className="flex items-center justify-between pt-6 px-6">
                                 <div className="heading5">Subtotal</div>
-                                <div className="heading5">${totalCart}.00</div>
+                                <div className="heading5">R${totalCart},00</div>
                             </div>
                             <div className="block-button text-center p-6">
                                 <div className="flex items-center gap-4">
@@ -186,103 +186,103 @@ const ModalCart = ({ serverTimeLeft }: { serverTimeLeft: CountdownTimeType }) =>
                                         className='button-main basis-1/2 bg-white border border-black text-black text-center uppercase'
                                         onClick={closeModalCart}
                                     >
-                                        View cart
+                                        Ver Carrinho
                                     </Link>
                                     <Link
                                         href={'/checkout'}
                                         className='button-main basis-1/2 text-center uppercase'
                                         onClick={closeModalCart}
                                     >
-                                        Check Out
+                                        Finalizar
                                     </Link>
                                 </div>
-                                <div onClick={closeModalCart} className="text-button-uppercase mt-4 text-center has-line-before cursor-pointer inline-block">Or continue shopping</div>
+                                <div onClick={closeModalCart} className="text-button-uppercase mt-4 text-center has-line-before cursor-pointer inline-block">Ou continuar comprando</div>
                             </div>
                             <div className={`tab-item note-block ${activeTab === 'note' ? 'active' : ''}`}>
                                 <div className="px-6 py-4 border-b border-line">
                                     <div className="item flex items-center gap-3 cursor-pointer">
                                         <Icon.NotePencil className='text-xl' />
-                                        <div className="caption1">Note</div>
+                                        <div className="caption1">Observacao</div>
                                     </div>
                                 </div>
                                 <div className="form pt-4 px-6">
-                                    <textarea name="form-note" id="form-note" rows={4} placeholder='Add special instructions for your order...' className='caption1 py-3 px-4 bg-surface border-line rounded-md w-full'></textarea>
+                                    <textarea name="form-note" id="form-note" rows={4} placeholder='Adicione instrucoes especiais para seu pedido...' className='caption1 py-3 px-4 bg-surface border-line rounded-md w-full'></textarea>
                                 </div>
                                 <div className="block-button text-center pt-4 px-6 pb-6">
-                                    <div className='button-main w-full text-center' onClick={() => setActiveTab('')}>Save</div>
-                                    <div onClick={() => setActiveTab('')} className="text-button-uppercase mt-4 text-center has-line-before cursor-pointer inline-block">Cancel</div>
+                                    <div className='button-main w-full text-center' onClick={() => setActiveTab('')}>Salvar</div>
+                                    <div onClick={() => setActiveTab('')} className="text-button-uppercase mt-4 text-center has-line-before cursor-pointer inline-block">Cancelar</div>
                                 </div>
                             </div>
                             <div className={`tab-item note-block ${activeTab === 'shipping' ? 'active' : ''}`}>
                                 <div className="px-6 py-4 border-b border-line">
                                     <div className="item flex items-center gap-3 cursor-pointer">
                                         <Icon.Truck className='text-xl' />
-                                        <div className="caption1">Estimate shipping rates</div>
+                                        <div className="caption1">Calcular frete</div>
                                     </div>
                                 </div>
                                 <div className="form pt-4 px-6">
                                     <div className="">
-                                        <label htmlFor='select-country' className="caption1 text-secondary">Country/region</label>
+                                        <label htmlFor='select-country' className="caption1 text-secondary">Estado</label>
                                         <div className="select-block relative mt-2">
                                             <select
                                                 id="select-country"
                                                 name="select-country"
                                                 className='w-full py-3 pl-5 rounded-xl bg-white border border-line'
-                                                defaultValue={'Country/region'}
+                                                defaultValue={'Estado'}
                                             >
-                                                <option value="Country/region" disabled>Country/region</option>
-                                                <option value="France">France</option>
-                                                <option value="Spain">Spain</option>
-                                                <option value="UK">UK</option>
-                                                <option value="USA">USA</option>
+                                                <option value="Estado" disabled>Selecione o Estado</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="SP">Sao Paulo</option>
+                                                <option value="MG">Minas Gerais</option>
+                                                <option value="ES">Espirito Santo</option>
                                             </select>
                                             <Icon.CaretDown size={12} className='absolute top-1/2 -translate-y-1/2 md:right-5 right-2' />
                                         </div>
                                     </div>
                                     <div className="mt-3">
-                                        <label htmlFor='select-state' className="caption1 text-secondary">State</label>
+                                        <label htmlFor='select-state' className="caption1 text-secondary">Cidade</label>
                                         <div className="select-block relative mt-2">
                                             <select
                                                 id="select-state"
                                                 name="select-state"
                                                 className='w-full py-3 pl-5 rounded-xl bg-white border border-line'
-                                                defaultValue={'State'}
+                                                defaultValue={'Cidade'}
                                             >
-                                                <option value="State" disabled>State</option>
-                                                <option value="Paris">Paris</option>
-                                                <option value="Madrid">Madrid</option>
-                                                <option value="London">London</option>
-                                                <option value="New York">New York</option>
+                                                <option value="Cidade" disabled>Selecione a Cidade</option>
+                                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                                <option value="Niteroi">Niteroi</option>
+                                                <option value="Sao Goncalo">Sao Goncalo</option>
+                                                <option value="Duque de Caxias">Duque de Caxias</option>
                                             </select>
                                             <Icon.CaretDown size={12} className='absolute top-1/2 -translate-y-1/2 md:right-5 right-2' />
                                         </div>
                                     </div>
                                     <div className="mt-3">
-                                        <label htmlFor='select-code' className="caption1 text-secondary">Postal/Zip Code</label>
-                                        <input className="border-line px-5 py-3 w-full rounded-xl mt-3" id="select-code" type="text" placeholder="Postal/Zip Code" />
+                                        <label htmlFor='select-code' className="caption1 text-secondary">CEP</label>
+                                        <input className="border-line px-5 py-3 w-full rounded-xl mt-3" id="select-code" type="text" placeholder="Digite seu CEP" />
                                     </div>
                                 </div>
                                 <div className="block-button text-center pt-4 px-6 pb-6">
-                                    <div className='button-main w-full text-center' onClick={() => setActiveTab('')}>Calculator</div>
-                                    <div onClick={() => setActiveTab('')} className="text-button-uppercase mt-4 text-center has-line-before cursor-pointer inline-block">Cancel</div>
+                                    <div className='button-main w-full text-center' onClick={() => setActiveTab('')}>Calcular</div>
+                                    <div onClick={() => setActiveTab('')} className="text-button-uppercase mt-4 text-center has-line-before cursor-pointer inline-block">Cancelar</div>
                                 </div>
                             </div>
                             <div className={`tab-item note-block ${activeTab === 'coupon' ? 'active' : ''}`}>
                                 <div className="px-6 py-4 border-b border-line">
                                     <div className="item flex items-center gap-3 cursor-pointer">
                                         <Icon.Tag className='text-xl' />
-                                        <div className="caption1">Add A Coupon Code</div>
+                                        <div className="caption1">Adicionar Cupom de Desconto</div>
                                     </div>
                                 </div>
                                 <div className="form pt-4 px-6">
                                     <div className="">
-                                        <label htmlFor='select-discount' className="caption1 text-secondary">Enter Code</label>
-                                        <input className="border-line px-5 py-3 w-full rounded-xl mt-3" id="select-discount" type="text" placeholder="Discount code" />
+                                        <label htmlFor='select-discount' className="caption1 text-secondary">Digite o Codigo</label>
+                                        <input className="border-line px-5 py-3 w-full rounded-xl mt-3" id="select-discount" type="text" placeholder="Codigo do cupom" />
                                     </div>
                                 </div>
                                 <div className="block-button text-center pt-4 px-6 pb-6">
-                                    <div className='button-main w-full text-center' onClick={() => setActiveTab('')}>Apply</div>
-                                    <div onClick={() => setActiveTab('')} className="text-button-uppercase mt-4 text-center has-line-before cursor-pointer inline-block">Cancel</div>
+                                    <div className='button-main w-full text-center' onClick={() => setActiveTab('')}>Aplicar</div>
+                                    <div onClick={() => setActiveTab('')} className="text-button-uppercase mt-4 text-center has-line-before cursor-pointer inline-block">Cancelar</div>
                                 </div>
                             </div>
                         </div>

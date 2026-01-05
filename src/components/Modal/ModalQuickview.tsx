@@ -97,7 +97,7 @@ const ModalQuickview = () => {
                     addToCompare(selectedProduct);
                 }
             } else {
-                alert('Compare up to 3 products')
+                alert('Compare ate 3 produtos')
             }
         }
         openModalCompare();
@@ -129,7 +129,7 @@ const ModalQuickview = () => {
                         </div>
                         <div className="right w-full px-4">
                             <div className="heading pb-6 px-4 flex items-center justify-between relative">
-                                <div className="heading5">Quick View</div>
+                                <div className="heading5">Visualizacao Rapida</div>
                                 <div
                                     className="close-btn absolute right-0 top-0 w-6 h-6 rounded-full bg-surface flex items-center justify-center duration-300 cursor-pointer hover:bg-black hover:text-white"
                                     onClick={closeQuickview}
@@ -160,12 +160,12 @@ const ModalQuickview = () => {
                                 </div>
                                 <div className="flex items-center mt-3">
                                     <Rate currentRate={selectedProduct?.rate} size={14} />
-                                    <span className='caption1 text-secondary'>(1.234 reviews)</span>
+                                    <span className='caption1 text-secondary'>(1.234 avaliacoes)</span>
                                 </div>
                                 <div className="flex items-center gap-3 flex-wrap mt-5 pb-6 border-b border-line">
-                                    <div className="product-price heading5">${selectedProduct?.price}.00</div>
+                                    <div className="product-price heading5">R${selectedProduct?.price},00</div>
                                     <div className='w-px h-4 bg-line'></div>
-                                    <div className="product-origin-price font-normal text-secondary2"><del>${selectedProduct?.originPrice}.00</del></div>
+                                    <div className="product-origin-price font-normal text-secondary2"><del>R${selectedProduct?.originPrice},00</del></div>
                                     {selectedProduct?.originPrice && (
                                         <div className="product-sale caption2 font-semibold bg-green px-3 py-0.5 inline-block rounded-full">
                                             -{percentSale}%
@@ -175,7 +175,7 @@ const ModalQuickview = () => {
                                 </div>
                                 <div className="list-action mt-6">
                                     <div className="choose-color">
-                                        <div className="text-title">Colors: <span className='text-title color'>{activeColor}</span></div>
+                                        <div className="text-title">Cores: <span className='text-title color'>{activeColor}</span></div>
                                         <div className="list-color flex items-center gap-2 flex-wrap mt-3">
                                             {selectedProduct?.variation.map((item, index) => (
                                                 <div
@@ -202,12 +202,12 @@ const ModalQuickview = () => {
                                     </div>
                                     <div className="choose-size mt-5">
                                         <div className="heading flex items-center justify-between">
-                                            <div className="text-title">Size: <span className='text-title size'>{activeSize}</span></div>
+                                            <div className="text-title">Tamanho: <span className='text-title size'>{activeSize}</span></div>
                                             <div
                                                 className="caption1 size-guide text-red underline cursor-pointer"
                                                 onClick={handleOpenSizeGuide}
                                             >
-                                                Size Guide
+                                                Guia de Tamanhos
                                             </div>
                                             <ModalSizeguide data={selectedProduct} isOpen={openSizeGuide} onClose={handleCloseSizeGuide} />
                                         </div>
@@ -223,7 +223,7 @@ const ModalQuickview = () => {
                                             ))}
                                         </div>
                                     </div>
-                                    <div className="text-title mt-5">Quantity:</div>
+                                    <div className="text-title mt-5">Quantidade:</div>
                                     <div className="choose-quantity flex items-center max-xl:flex-wrap lg:justify-between gap-5 mt-3">
                                         <div className="quantity-block md:p-3 max-md:py-1.5 max-md:px-3 flex items-center justify-between rounded-lg border border-line sm:w-[180px] w-[120px] flex-shrink-0">
                                             <Icon.Minus
@@ -236,10 +236,10 @@ const ModalQuickview = () => {
                                                 className='cursor-pointer body1'
                                             />
                                         </div>
-                                        <div onClick={handleAddToCart} className="button-main w-full text-center bg-white text-black border border-black">Add To Cart</div>
+                                        <div onClick={handleAddToCart} className="button-main w-full text-center bg-white text-black border border-black">Adicionar ao Carrinho</div>
                                     </div>
                                     <div className="button-block mt-5">
-                                        <div className="button-main w-full text-center">Buy It Now</div>
+                                        <div className="button-main w-full text-center">Comprar Agora</div>
                                     </div>
                                     <div className="flex items-center flex-wrap lg:gap-20 gap-8 gap-y-4 mt-5">
                                         <div className="compare flex items-center gap-3 cursor-pointer" onClick={handleAddToCompare}>
@@ -248,42 +248,42 @@ const ModalQuickview = () => {
                                             >
                                                 <Icon.ArrowsCounterClockwise className='heading6' />
                                             </div>
-                                            <span>Compare</span>
+                                            <span>Comparar</span>
                                         </div>
                                         <div className="share flex items-center gap-3 cursor-pointer">
                                             <div className="share-btn md:w-12 md:h-12 w-10 h-10 flex items-center justify-center border border-line cursor-pointer rounded-xl duration-300 hover:bg-black hover:text-white">
                                                 <Icon.ShareNetwork weight='fill' className='heading6' />
                                             </div>
-                                            <span>Share Products</span>
+                                            <span>Compartilhar</span>
                                         </div>
                                     </div>
                                     <div className="more-infor mt-6">
                                         <div className="flex items-center gap-4 flex-wrap">
                                             <div className="flex items-center gap-1">
                                                 <Icon.ArrowClockwise className='body1' />
-                                                <div className="text-title">Delivery & Return</div>
+                                                <div className="text-title">Entrega e Devolucao</div>
                                             </div>
                                             <div className="flex items-center gap-1">
                                                 <Icon.Question className='body1' />
-                                                <div className="text-title">Ask A Question</div>
+                                                <div className="text-title">Tire suas Duvidas</div>
                                             </div>
                                         </div>
                                         <div className="flex items-center flex-wrap gap-1 mt-3">
                                             <Icon.Timer className='body1' />
-                                            <span className="text-title">Estimated Delivery:</span>
-                                            <span className="text-secondary">14 January - 18 January</span>
+                                            <span className="text-title">Entrega Estimada:</span>
+                                            <span className="text-secondary">14 Janeiro - 18 Janeiro</span>
                                         </div>
                                         <div className="flex items-center flex-wrap gap-1 mt-3">
                                             <Icon.Eye className='body1' />
                                             <span className="text-title">38</span>
-                                            <span className="text-secondary">people viewing this product right now!</span>
+                                            <span className="text-secondary">pessoas vendo este produto agora!</span>
                                         </div>
                                         <div className="flex items-center gap-1 mt-3">
                                             <div className="text-title">SKU:</div>
                                             <div className="text-secondary">53453412</div>
                                         </div>
                                         <div className="flex items-center gap-1 mt-3">
-                                            <div className="text-title">Categories:</div>
+                                            <div className="text-title">Categorias:</div>
                                             <div className="text-secondary">{selectedProduct?.category}, {selectedProduct?.gender}</div>
                                         </div>
                                         <div className="flex items-center gap-1 mt-3">
@@ -293,7 +293,7 @@ const ModalQuickview = () => {
                                     </div>
                                     <div className="list-payment mt-7">
                                         <div className="main-content lg:pt-8 pt-6 lg:pb-6 pb-4 sm:px-4 px-3 border border-line rounded-xl relative max-md:w-2/3 max-sm:w-full">
-                                            <div className="heading6 px-5 bg-white absolute -top-[14px] left-1/2 -translate-x-1/2 whitespace-nowrap">Guranteed safe checkout</div>
+                                            <div className="heading6 px-5 bg-white absolute -top-[14px] left-1/2 -translate-x-1/2 whitespace-nowrap">Pagamento 100% Seguro</div>
                                             <div className="list grid grid-cols-6">
                                                 <div className="item flex items-center justify-center lg:px-3 px-1">
                                                     <Image
