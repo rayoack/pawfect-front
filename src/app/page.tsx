@@ -83,7 +83,7 @@ export default async function Home() {
       {/* <Benefit props="md:mt-20 mt-10 md:pt-20 pt-10 border-t border-line" />
       <Instagram /> */}
       <Brand />
-      {/* <Footer /> */}
+      <Footer />
       <ModalNewsletter />
     </>
   )
