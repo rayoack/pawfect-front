@@ -27,10 +27,10 @@ interface CategoryItem {
 }
 
 interface CollectionProps {
-    categories: CategoryItem[]
+    categories?: CategoryItem[]
 }
 
-const Collection: React.FC<CollectionProps> = ({ categories }) => {
+const Collection: React.FC<CollectionProps> = ({ categories = [] }) => {
     const router = useRouter()
 
     const handleCategoryClick = (category: string) => {

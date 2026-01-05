@@ -23,10 +23,10 @@ interface BannerItem {
 }
 
 interface BannerProps {
-    banners: BannerItem[]
+    banners?: BannerItem[]
 }
 
-const Banner: React.FC<BannerProps> = ({ banners }) => {
+const Banner: React.FC<BannerProps> = ({ banners = [] }) => {
     // Default banners (fallback se Strapi não tiver dados)
     const defaultBanners = [
         {
