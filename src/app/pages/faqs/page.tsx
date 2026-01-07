@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
-import MenuOne from '@/components/Header/Menu/MenuOne'
+import MenuPet from '@/components/Header/Menu/MenuPet'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb';
 import Footer from '@/components/Footer/Footer'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
@@ -20,10 +20,10 @@ const Faqs = () => {
 
     return (
         <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
+            <TopNavOne props="style-one bg-primary-blue-deep" slogan="Pawfect Pet Care - Cuidando do seu melhor amigo!" />
             <div id="header" className='relative w-full'>
-                <MenuOne props="bg-transparent" />
-                <Breadcrumb heading='FAQs' subHeading='FAQs' />
+                <MenuPet />
+                <Breadcrumb heading='Perguntas Frequentes' subHeading='Perguntas Frequentes' />
             </div>
             <div className='faqs-block md:py-20 py-10'>
                 <div className="container">

@@ -72,7 +72,7 @@ const MenuPet = () => {
 
     return (
         <>
-            <div className={`header-menu style-eight ${fixedHeader ? ' fixed' : 'relative'} bg-surface w-full md:h-[90px] h-[64px]`}>
+            <div className={`header-menu style-eight fixed top-0 left-0 right-0 z-50 bg-surface w-full md:h-[90px] h-[64px]`}>
                 <div className="container mx-auto h-full">
                     <div className="header-main flex items-center justify-between h-full">
                         <div className="menu-mobile-icon lg:hidden flex items-center" onClick={handleMenuMobile}>
@@ -141,7 +141,7 @@ const MenuPet = () => {
                 </div>
             </div>
 
-            <div className="top-nav-menu relative bg-white h-[44px] max-lg:hidden z-10">
+            <div className="top-nav-menu fixed md:top-[90px] top-[64px] left-0 right-0 bg-white h-[44px] max-lg:hidden z-40">
                 <div className="container h-full">
                     <div className="top-nav-menu-main flex items-center justify-between h-full">
                         <div className="left flex items-center h-full">
@@ -1790,6 +1790,9 @@ const MenuPet = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Spacer to push content below fixed header */}
+            <div className="md:h-[134px] h-[64px]"></div>
         </>
     )
 }

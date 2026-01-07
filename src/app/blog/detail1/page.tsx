@@ -33,7 +33,7 @@ const BlogDetailOne = () => {
 
     return (
         <>
-            <TopNavOne props="style-one bg-black" slogan="Novos clientes economizam 10% com o codigo PAWFECT10" />
+            <TopNavOne props="style-one bg-primary-blue-deep" slogan="Pawfect Pet Care - Cuidando do seu melhor amigo!" />
             <div id="header" className='relative w-full'>
                 <MenuPet />
             </div>
